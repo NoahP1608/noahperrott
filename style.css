@@ -3,6 +3,8 @@ html {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -23,8 +25,13 @@ nav {
   z-index: 1000;
 }
 
+.nav-links {
+  display: flex;
+  list-style: none;     
+  gap: 30px;            
+}
 
-
+}
 
 .heading {
 
@@ -40,11 +47,6 @@ nav {
 
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;     
-  gap: 30px;            
-}
 
 
 .nav-links li {
