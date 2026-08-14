@@ -184,6 +184,20 @@ a {
     justify-content: center;
 }
 
+.essay {
+  margin-left: 180px;
+  padding: 50px;
+  max-width: 750px;
+
+}
+
+.essay p {
+  max-width: 750px;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
 
 
 
