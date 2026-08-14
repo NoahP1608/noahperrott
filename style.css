@@ -179,6 +179,11 @@ a {
   font-style: italic;
 }
 
+.landing-video {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
