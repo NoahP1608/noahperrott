@@ -1,6 +1,6 @@
 function setcolor(){
   let x = document.getElementsByTagName('BODY')[0];
-  x.style.backgroundColor = 'white'
+  x.style.backgroundColor = 'black'
 }
 
 function changecolor(color) {

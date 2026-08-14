@@ -3,38 +3,53 @@ html {
   width: 100%;
 }
 
-
+body {
+  background-color: #000000;
+}
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
 
-  height: 8vh;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
+    width: 180px;
+    height: 100vh;
 
-  position: fixed;
-  top: 0;
-  left: 0;
+    padding: 30px 25px;
 
-  padding: 0 40px;
-  background-color: rgb(196, 231, 231); /* optional */
-  z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav .heading {
+    margin-bottom: 50px;
+}
+
+nav h4 {
+    margin: 0;
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;     
-  gap: 30px;            
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family : "Courier New",Courier,mono;
 }
 
+.nav-links li {
+    margin-bottom: 15px;
+}
 
+.nav-links a {
+    text-decoration: none;
+}
+
+main {
+    margin-left: 180px;
+}
 
 .heading {
 
-  color: blue;
+  color: rgb(47, 47, 175);
 
   text-transform: uppercase;
 
@@ -45,23 +60,6 @@ nav {
   user-select: none;
 
 }
-
-
-
-.nav-links li {
-
-  list-style: none;
-
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  color: black;
-  font-weight: 500;
-}
-
-
 
 
 .nav-links a:hover:not(.active) {
@@ -76,9 +74,14 @@ nav {
 
 }
 
-h1,h2,h3,h5,p,button {
+
+h1,h2,h3,h4,h5,p,button {
+  font-size: small;
+  font-family : "Courier New",Courier,mono;
+  color: white; 
+  /*
   font-family: "Noto Sans", sans-serif;
-  
+  */
 }
 
 .project {
@@ -96,9 +99,16 @@ h1,h2,h3,h5,p,button {
 }
 
 .title {
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
-  font-family: "Noto Sans", sans-serif;
+  font-family : "Courier New",Courier,mono;
+}
+
+.normal {
+  padding-bottom:0px;
+  text-align: center;
+  font-family : "Courier New",Courier,mono;
 }
 
 .projectimage {
@@ -128,8 +138,6 @@ button {
   padding-right: 15px
 }
 
-
-
 .recommended-reading {
   padding: 40px;
 }
@@ -141,9 +149,10 @@ button {
 
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(8, auto);
-  gap: 20px;
+  grid-template-columns: repeat(5, 240px);
+  column-gap: 1px;
+  row-gap: 2px;
+  justify-content: center;
 }
 
 .book-grid img {
@@ -151,25 +160,18 @@ button {
   aspect-ratio: 2 / 3; /* book cover ratio */
   object-fit: cover;
   border-radius: 6px;
-  transition: transform 0.2s ease;
+ /*  transition: transform 0.2s ease; */
 }
 
 .book-grid img:hover {
   transform: scale(1.05);
 }
 
-
-
-
 section {
   scroll-margin-top: 8vh; /* height of your nav */
 }
-
-
-
-
 a {
-    color: #000000;
+    color:white;
     text-decoration: none;
 }
 
