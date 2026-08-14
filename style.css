@@ -12,8 +12,10 @@ nav {
 
   height: 8vh;
   width: 100%;
-
+  font-family: "Brush Script MT", cursive;
+  /*
   font-family: "Montserrat", sans-serif;
+*/
   text-decoration: none;
 
   position: fixed;
