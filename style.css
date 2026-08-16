@@ -79,6 +79,7 @@ h1,h2,h3,h4,h5,p,button {
   font-size: small;
   font-family : "Courier New",Courier,mono;
   color: white; 
+  text-align: center;
   /*
   font-family: "Noto Sans", sans-serif;
   */
@@ -199,10 +200,13 @@ a {
 }
 
 
-
-
-
-
+.bottom {
+      position: fixed;     
+      text-align: center;    
+      bottom: 0px; 
+      width: 100%;
+      font-family : "Courier New",Courier,mono;
+}
 
 
 
